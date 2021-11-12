@@ -1,4 +1,4 @@
-# Elektor DVD 2000-2009 (FR)
+# DVD Elektor 2000-2009 (FR)
 
 Correctifs pour accès WWW du DVDROM Elektor 2000-2009. Ce dépôt contient les liens des fichiers ayant un probleme de casse.
 Il ne contient aucune donnée présente sur [le DVD de l'éditeur](https://www.elektor.fr/dvd-elektor-2000-2009-fr).
