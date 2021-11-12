@@ -5,12 +5,17 @@ Il ne contient aucune donnée présente sur [le DVD de l'éditeur](https://www.e
 
 ## Installation
 
-Copiez le contenu du DVD dans un dossier de votre serveur HTTP:
+Clonez ce dépôt à la racine de votre serveur HTTP (DocumentRoot)
+```
+  cd ${DocumentRoot}
+  git clone https://github.com/lhondareyte/dvd-elektor-2000.git Elektor-2000
+```
+
+Copiez le contenu du DVD dans le dossier:
 
 Sous FreeBSD:
 ```
   mount -t cd9660 /dev/cd0 /mnt ; cd /mnt
-  mkdir ${DocumentRoot}/Elektor-2000
   find . -print | cpio -pdvmu ${DocumentRoot}/Elektor-2000
   cd - && umount /mnt
   camcontrol eject cd0
@@ -19,14 +24,7 @@ Sous FreeBSD:
 Sous Linux:
 ```
   mount -t iso9660 /dev/scd0 /mnt ; cd /mnt
-  mkdir ${DocumentRoot}/Elektor-2000
   find . -print | cpio -pdvmu ${DocumentRoot}/Elektor-2000
   cd - && umount /mnt
   eject /dev/scd0
-```
-
-Puis 
-```
-  cd ${DocumentRoot}/Elektor-2000
-  git clone https://github.com/lhondareyte/dvd-elektor-2000.git
 ```
