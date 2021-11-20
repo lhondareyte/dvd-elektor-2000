@@ -5,9 +5,11 @@ articles/2002/
 articles/2003/
 articles/2004/
 articles/2005/
-articles/2006/*.PDF
-articles/2007/*.PDF
-articles/2008/
+articles/2006/F*.PDF
+articles/2006/F*.pdf
+articles/2007/F*.pdf
+articles/2007/F*.PDF
+articles/2008/F*.pdf
 articles/2009/
 autorun.inf
 contact.html
